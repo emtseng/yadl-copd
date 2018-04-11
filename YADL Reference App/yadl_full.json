@@ -11,66 +11,76 @@
                         {
                         "identifier"   : "introduction",
                         "type"         : "instruction",
-                        "title"        : "Welcome to the YADL Full Assessment",
-                        "text"         : "Please rate each activity as \nEasy, Moderate, or Hard"
+                        "title"        : "Welcome to the CAT Full Assessment",
+                        "text"         : "This questionnaire will help you and your healthcare professional measure the impact COPD (Chronic Obstructive Pulmonary Disease) is having on your wellbeing and daily life."
                         },
                         {
                         "identifier": "yadl_full",
                         "type": "YADLFullAssessment",
-                        "text": "Over the past week, how difficult was this activity for you?",
+                        "text": "Which box best describes you currently?",
                         "choices":[
                                    {
-                                   "text":"Easy",
-                                   "value":"easy",
-                                   "color":"#258313"
+                                   "text":"Disagree++",
+                                   "value":"StronglyDisagree",
+                                   "color":"#D20005"
                                    },
                                    {
-                                   "text":"Moderate",
-                                   "value":"moderate",
+                                   "text":"Disagree",
+                                   "value":"Disagree",
                                    "color":"#F0743E"
                                    },
                                    {
-                                   "text":"Hard",
-                                   "value":"hard",
-                                   "color":"#D20005"
+                                   "text":"Agree",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   },
+                                   {
+                                   "text":"Agree++",
+                                   "value":"StronglyAgree",
+                                   "color":"#258313"
                                    }
                                    ],
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"BedToChair",
-                                  "description":"Bed To Chair",
-                                  "identifier":"BedToChair"
+                                  "imageTitle":"Cough",
+                                  "description":"I cough all the time",
+                                  "identifier":"Cough"
                                   },
                                   {
-                                  "imageTitle":"Dressing",
-                                  "description":"Dressing",
-                                  "identifier":"Dressing"
+                                  "imageTitle":"Mucus",
+                                  "description":"My chest is completely full of phlegm",
+                                  "identifier":"Mucus"
                                   },
                                   {
-                                  "imageTitle":"Housework",
-                                  "description":"Housework",
-                                  "identifier":"Housework"
+                                  "imageTitle":"ChestTight",
+                                  "description":"My chest feels very tight",
+                                  "identifier":"ChestTight"
                                   },
                                   {
-                                  "imageTitle":"Lifting",
-                                  "description":"Lift 10-pounds",
-                                  "identifier":"Lifting"
+                                  "imageTitle":"Breathless",
+                                  "description":"Taking the stairs I'm very breathless",
+                                  "identifier":"Breathless"
                                   },
                                   {
-                                  "imageTitle":"Shopping",
-                                  "description":"Shopping",
-                                  "identifier":"Shopping"
+                                  "imageTitle":"HomeLimited",
+                                  "description":"I'm very limited doing things at home",
+                                  "identifier":"HomeLimited"
                                   },
                                   {
-                                  "imageTitle":"ShortWalk",
-                                  "description":"Talking a short walk",
-                                  "identifier":"ShortWalk"
+                                  "imageTitle":"Confident",
+                                  "description":"I'm not at all confident leaving my home",
+                                  "identifier":"Confident"
                                   },
                                   {
-                                  "imageTitle":"WalkingUpStairs",
-                                  "description":"Climbing Stairs",
-                                  "identifier":"WalkingUpStairs"
+                                  "imageTitle":"Sleep",
+                                  "description":"I don’t sleep soundly",
+                                  "identifier":"Sleep"
+                                  },
+                                  {
+                                  "imageTitle":"Energy",
+                                  "description":"I have no energy at all",
+                                  "identifier":"Energy"
                                   }
                                   
                                   
@@ -83,14 +93,14 @@
                          {
                          "transform": "YADLFullRaw",
                          "inputMapping": [
-                                          {"parameter":"ShortWalk", "stepIdentifier":"yadl_full.ShortWalk"},
-                                          {"parameter":"WalkingUpStairs", "stepIdentifier":"yadl_full.WalkingUpStairs"},
-                                          {"parameter":"Shopping", "stepIdentifier":"yadl_full.Shopping"},
-                                          {"parameter":"Lifting", "stepIdentifier":"yadl_full.Lifting"},
-                                          {"parameter":"Housework", "stepIdentifier":"yadl_full.Housework"},
-                                          {"parameter":"Dressing", "stepIdentifier":"yadl_full.Dressing"},
-                                          {"parameter":"BedToChair", "stepIdentifier":"yadl_full.BedToChair"},
-
+                                          {"parameter":"Cough", "stepIdentifier":"yadl_full.Cough"},
+                                          {"parameter":"Mucus", "stepIdentifier":"yadl_full.Mucus"},
+                                          {"parameter":"ChestTight", "stepIdentifier":"yadl_full.ChestTight"},
+                                          {"parameter":"Breathless", "stepIdentifier":"yadl_full.Breathless"},
+                                          {"parameter":"HomeLimited", "stepIdentifier":"yadl_full.HomeLimited"},
+                                          {"parameter":"Confident", "stepIdentifier":"yadl_full.Confident"},
+                                          {"parameter":"Sleep", "stepIdentifier":"yadl_full.Sleep"},
+                                          {"parameter":"Energy", "stepIdentifier":"yadl_full.Energy"},
                                           {"parameter": "schemaID", "constant":{
                                           "namespace": "Cornell",
                                           "name": "yadl-full-assessment-dance",
